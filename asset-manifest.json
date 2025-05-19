@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/joshrecipewebsite/static/css/main.e89d6d6b.css",
+    "main.js": "/joshrecipewebsite/static/js/main.65f5fcbe.js",
+    "static/js/453.9b2646d8.chunk.js": "/joshrecipewebsite/static/js/453.9b2646d8.chunk.js",
+    "static/media/RubikDirt-Regular.ttf": "/joshrecipewebsite/static/media/RubikDirt-Regular.61a7c124415995ae5007.ttf",
+    "index.html": "/joshrecipewebsite/index.html",
+    "main.e89d6d6b.css.map": "/joshrecipewebsite/static/css/main.e89d6d6b.css.map",
+    "main.65f5fcbe.js.map": "/joshrecipewebsite/static/js/main.65f5fcbe.js.map",
+    "453.9b2646d8.chunk.js.map": "/joshrecipewebsite/static/js/453.9b2646d8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e89d6d6b.css",
+    "static/js/main.65f5fcbe.js"
+  ]
+}
