@@ -12,7 +12,8 @@ const Banner = ({ title, subtitle }) => (
       className="banner-video"
       aria-label="Burger flipping video in the background"
     >
-      <source src="./BGPan.mp4" type="video/mp4" />
+      <source src={`${process.env.PUBLIC_URL}/BGPan.mp4`} type="video/mp4" />
+
       Your browser does not support the video tag.
     </video>
 
