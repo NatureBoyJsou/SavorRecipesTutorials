@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/joshrecipewebsite/static/css/main.e89d6d6b.css",
-    "main.js": "/joshrecipewebsite/static/js/main.13fa8d56.js",
+    "main.css": "/joshrecipewebsite/static/css/main.12370f0f.css",
+    "main.js": "/joshrecipewebsite/static/js/main.30a75259.js",
     "static/js/453.9b2646d8.chunk.js": "/joshrecipewebsite/static/js/453.9b2646d8.chunk.js",
     "static/media/RubikDirt-Regular.ttf": "/joshrecipewebsite/static/media/RubikDirt-Regular.61a7c124415995ae5007.ttf",
     "index.html": "/joshrecipewebsite/index.html",
-    "main.e89d6d6b.css.map": "/joshrecipewebsite/static/css/main.e89d6d6b.css.map",
-    "main.13fa8d56.js.map": "/joshrecipewebsite/static/js/main.13fa8d56.js.map",
+    "main.12370f0f.css.map": "/joshrecipewebsite/static/css/main.12370f0f.css.map",
+    "main.30a75259.js.map": "/joshrecipewebsite/static/js/main.30a75259.js.map",
     "453.9b2646d8.chunk.js.map": "/joshrecipewebsite/static/js/453.9b2646d8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e89d6d6b.css",
-    "static/js/main.13fa8d56.js"
+    "static/css/main.12370f0f.css",
+    "static/js/main.30a75259.js"
   ]
 }
