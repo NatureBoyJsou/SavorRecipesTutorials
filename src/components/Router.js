@@ -1,11 +1,7 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router } from 'react-router-dom';
 import Home from './Home';
 import CookingTutorials from './CookingTutorials';
-import Banner from "./Banner";
-import FoodGallery from "./FoodGallery";
-import Header from "./Header";
-import ModelViewer from "./ModelViewer";
 
 
 
