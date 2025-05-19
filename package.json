@@ -1,5 +1,3 @@
-
-
 {
   "homepage": "https://natureboyjsou.github.io/SavorRecipesTutorials/",
   "name": "savor",
@@ -18,7 +16,6 @@
     "react-scripts": "5.0.1",
     "react-swipeable": "^7.0.2",
     "web-vitals": "^2.1.4"
-  
   },
   "scripts": {
     "start": "react-scripts start",
@@ -27,7 +24,6 @@
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
-  
   },
   "eslintConfig": {
     "extends": [
