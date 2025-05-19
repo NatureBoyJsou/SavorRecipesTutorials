@@ -2,7 +2,7 @@ import React from "react";
 import Banner from "./Banner";
 import FoodGallery from "./FoodGallery";
 import Header from "./Header";
-import '/styles.css';
+import '../styles.css';
 
 
 const NavBarItems = [
