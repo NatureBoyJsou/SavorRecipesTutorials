@@ -1,0 +1,264 @@
+
+
+/* NavBar Background Color */
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 32px;
+  padding-right: 8px;
+  height: 64px;
+  background-color: black;
+  position: sticky;
+  top: 0;
+  z-index: 30;
+}
+
+/* Section for NavBarStyle */
+.NavBar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-weight: 100;
+  font-family: RubikDirt;
+}
+
+.NavBar p {
+  margin-right: 24px;
+}
+
+.NavBar p a {
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+}
+
+/* Top Left Website Title */
+.logo {
+  font-weight: 100;
+  font-size: 30px;
+  color: orange;
+  font-family: RubikDirt;
+}
+
+/* Fonts Used */
+@font-face {
+  font-family: 'RubikDirt';
+  src: url('/src/assets/fonts/RubikDirt-Regular.ttf') format('truetype');
+  font-weight: 100px;
+  font-style: normal;
+}
+
+html {
+  font-family: "Montserrat";
+  font-size: 14px;
+}
+
+body {
+  margin: 0;
+}
+
+.content-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 3rem 2rem;
+  gap: 2rem;
+  z-index: 2;
+  position: relative;
+  font-weight: 100;
+}
+
+/* Top Rectangular Content Box */
+.full-width-box {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  color: white;
+  text-align: center;
+  margin: 2rem 0;
+  z-index: 3;
+  position: relative;
+  opacity: 0.8;
+  font-family: RubikDirt;
+  font-size: 40px;
+  font-weight: 100;
+}
+
+/* We're Glad You're Here */
+.full-width-box h1 {
+  font-weight: 100; /* or 400 for normal */
+  color: white; /* base orange color */
+  text-shadow: 0 0 8px rgba(239, 162, 8, 0.9), 0 0 20px rgba(239, 162, 8, 0.7);
+}
+
+
+/* Lower Background Rectangular Content Box */
+.content-box1 {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 1200px;
+  padding: 5rem;            /* Keep large size */
+  text-align: left;
+  transition: transform 0.3s ease;
+  margin: -30rem auto 0;     /* This moves it up */
+  box-sizing: border-box;
+  font-weight: 100;
+}
+
+
+
+/* Smaller Square Content Box */
+.content-box {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+  width: 300px;
+  padding: 2rem;
+  text-align: left;
+  transition: transform 0.3s ease;
+  font-family: RubikDirt;
+  font-weight: 100;
+}
+
+.content-box {
+  perspective: 1000px; /* Needed for 3D flip */
+  transition: box-shadow 0.6s ease; /* Smooth glow transition */
+}
+
+.content-box:hover {
+  transform: rotateY(180deg);
+  box-shadow: 0 0 20px 5px rgba(239, 162, 8, 0.8); /* Orange glow */
+  transition: transform 0.6s ease, box-shadow 0.6s ease;
+}
+
+/* Headers Like Fresh Ingredients...Etc */
+.content-box h2 {
+  margin-top: 0;
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 100;
+}
+
+/* Content Below */
+.content-box p {
+  font-size: 1rem;
+  color: white;
+  font-weight: 100;
+}
+
+/* 3D Model Viewer Style */
+.model-viewer {
+  width: 100%;
+  max-width: 900px;
+  height: 200px;
+  margin: -400px auto 0;
+  display: block;
+}
+
+
+/* Burger Video */
+.banner-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -5;
+  opacity: 1;
+}
+
+/* Seafood Video */
+.secondary-banner-video {
+  position: relative;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  z-index: 1;
+  margin-top: 2rem;
+}
+
+.secondary-video-wrapper {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  margin-top: 400px; 
+}
+
+
+.banner {
+  display: flex;
+  flex-direction: row;
+  height: 400px;
+  padding-left: 32px;
+}
+
+.banner .content {
+  min-width: 270px;
+  width: 100%;
+  margin-top: 80px;
+}
+
+.banner img {
+  width: 43vw;
+  object-fit: cover;
+  clip-path: polygon(13% 0, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.banner h1 {
+  font-size: 32px;
+}
+
+.food-gallery {
+  padding: 100px 50px;
+  color: rgb(239, 162, 8);
+}
+.gallery-image {
+  width: 100%;         
+  height: 600px;        
+  object-fit: cover;    
+  border-radius: 12px;  
+  display: block;       
+}
+.video-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero-video {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.PowerpointGallery {
+  margin: -30rem auto 2rem auto; 
+  max-width: 800px;
+  padding: 1rem;
+  color: #fff;
+}
+
+.video-overlay-content {
+  position: absolute;
+  top: 15%;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 2rem;
+  /* border-radius: 10px;  remove if you want full width without rounded corners */
+  z-index: 2;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  user-select: none;
+}
