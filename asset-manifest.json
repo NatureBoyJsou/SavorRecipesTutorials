@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/joshrecipewebsite/static/css/main.12370f0f.css",
-    "main.js": "/joshrecipewebsite/static/js/main.30a75259.js",
-    "static/js/453.9b2646d8.chunk.js": "/joshrecipewebsite/static/js/453.9b2646d8.chunk.js",
-    "static/media/RubikDirt-Regular.ttf": "/joshrecipewebsite/static/media/RubikDirt-Regular.61a7c124415995ae5007.ttf",
-    "index.html": "/joshrecipewebsite/index.html",
-    "main.12370f0f.css.map": "/joshrecipewebsite/static/css/main.12370f0f.css.map",
-    "main.30a75259.js.map": "/joshrecipewebsite/static/js/main.30a75259.js.map",
-    "453.9b2646d8.chunk.js.map": "/joshrecipewebsite/static/js/453.9b2646d8.chunk.js.map"
+    "main.css": "/SavorRecipesTutorials/static/css/main.e6857dce.css",
+    "main.js": "/SavorRecipesTutorials/static/js/main.47c2a859.js",
+    "static/js/453.9b2646d8.chunk.js": "/SavorRecipesTutorials/static/js/453.9b2646d8.chunk.js",
+    "static/media/RubikDirt-Regular.ttf": "/SavorRecipesTutorials/static/media/RubikDirt-Regular.61a7c124415995ae5007.ttf",
+    "index.html": "/SavorRecipesTutorials/index.html",
+    "main.e6857dce.css.map": "/SavorRecipesTutorials/static/css/main.e6857dce.css.map",
+    "main.47c2a859.js.map": "/SavorRecipesTutorials/static/js/main.47c2a859.js.map",
+    "453.9b2646d8.chunk.js.map": "/SavorRecipesTutorials/static/js/453.9b2646d8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.12370f0f.css",
-    "static/js/main.30a75259.js"
+    "static/css/main.e6857dce.css",
+    "static/js/main.47c2a859.js"
   ]
 }
