@@ -14,7 +14,6 @@ const Banner = ({ title, subtitle }) => (
       zIndex="-10"
     >
         <source src={`${process.env.PUBLIC_URL}/BGPan.webm`} type="video/webm" />
-        <source src={`${process.env.PUBLIC_URL}/BGPan.mp4`} type="video/mp4" />
 
       Your browser does not support the video tag.
     </video>

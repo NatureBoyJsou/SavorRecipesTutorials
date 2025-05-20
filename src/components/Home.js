@@ -85,7 +85,8 @@ const Home = () => {
       zIndex: "auto",
     }}
   >
-    <source src={`${process.env.PUBLIC_URL}/Seafood.mp4`} type="video/mp4" />
+      <source src={`${process.env.PUBLIC_URL}/Seafood.webm`} type="video/webm" />
+      
     Your browser does not support the video tag.
   </video>
 
