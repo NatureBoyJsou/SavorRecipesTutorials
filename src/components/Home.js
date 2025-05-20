@@ -56,35 +56,7 @@ const Home = () => {
         <FoodGallery />
       </div>
 
-{/* New TEST.mp4 Video Section */}
-<div
-  className="test-video-wrapper"
-  style={{
-    position: "relative",
-    height: "400px",          // Adjust height as you like
-    marginTop: "40px",
-    overflow: "hidden",
-  }}
->
-  <video
-    autoPlay
-    muted
-    loop
-    preload="auto"
-    playsInline
-    className="test-banner-video"
-    style={{
-      width: "100%",
-      height: "100%",
-      objectFit: "cover",
-      position: "relative",
-      zIndex: 1,
-    }}
-  >
-    <source src={`${process.env.PUBLIC_URL}/TEST.mp4`} type="video/mp4" />
-    Your browser does not support the video tag.
-  </video>
-</div>
+
 {/* Video Below Food Recommender with Overlay Content Box */}
 <div
   className="secondary-video-wrapper"
@@ -103,6 +75,7 @@ const Home = () => {
     loop
     preload="auto"
     playsInline
+    crossOrigin="anonymous"
     className="secondary-banner-video"
     style={{
       width: "100%",
