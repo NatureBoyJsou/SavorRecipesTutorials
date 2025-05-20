@@ -4,12 +4,16 @@ import Banner from "./Banner";
 import FoodGallery from "./FoodGallery";
 import Header from "./Header";
 import ModelViewer from "./ModelViewer";
+import PPGallery from "./PowerpointGallery";
+import ContactForm from "./ContactForm";
 
 const NavBarItems = [
   { name: "Home", link: "/", type: "link" },
+  { name: "Recipes", link: "/recipes", type: "link" },
   { name: "Nutritional App", link: "/nutritional-app", type: "link" },
   { name: "Cooking Tutorials", link: "/cooking-tutorials", type: "link" }
 ];
+
 
 const images = [
   "./FoodImage1.jpg",
@@ -58,8 +62,12 @@ const CookingTutorials = () => {
       <Banner />
       
       <div className="PowerpointGallery">
-        <PowerpointGallery />
+        <PPGallery />
+     
       </div>
+          <ContactForm />
+
+
 
 
     </div>

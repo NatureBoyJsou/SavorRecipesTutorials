@@ -13,7 +13,7 @@ const Banner = ({ title, subtitle }) => (
       aria-label="Burger flipping video in the background"
       zIndex="-10"
     >
-    <source src={`${process.env.PUBLIC_URL}/BGPan.webm`} type="video/webm" />
+        <source src={`${process.env.PUBLIC_URL}/BGPan.webm`} type="video/webm" />
 
       Your browser does not support the video tag.
     </video>

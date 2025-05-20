@@ -4,13 +4,16 @@ import Banner from "./Banner";
 import FoodGallery from "./FoodGallery";
 import Header from "./Header";
 import ModelViewer from "./ModelViewer";
+import ContactForm from "./ContactForm";
+
+
 
 const NavBarItems = [
   { name: "Home", link: "/", type: "link" },
+  { name: "Recipes", link: "/recipes", type: "link" },
   { name: "Nutritional App", link: "/nutritional-app", type: "link" },
   { name: "Cooking Tutorials", link: "/cooking-tutorials", type: "link" }
 ];
-
 const images = [
   "./FoodImage1.jpg",
   "./FoodImage2.jpg",
@@ -42,31 +45,73 @@ const PowerpointGallery = () => {
   );
 };
 
-const CookingTutorials = () => {
+const NutritionalApp = () => {
   return (
-    <div className="CookingTutorials">
+    <div className="NutritionalApp">
       <Header restaurantName="Nutritional App" menuItems={NavBarItems} />
 
-      {/* Content Section */}
+      {/* Top Content Box */}
       <section className="content-section">
         <div className="full-width-box">
-          <h1>Cooking Tutorials</h1>
-          <p></p>
+          <h1>Nutritional App</h1>
+        </div>
+
+        {/* QR Code Box */}
+        <div className="full-width-box">
+          <img 
+            src={process.env.PUBLIC_URL + "/AppQRCodes.png"} 
+            alt="QR Codes" 
+            style={{ width: "100%", borderRadius: "12px" }} 
+          />
         </div>
       </section>
 
       <Banner />
-      
-      <div className="PowerpointGallery">
-        <PowerpointGallery />
-      </div>
 
-      {/* Optional: you can add FoodGallery or ModelViewer here if needed */}
-      {/* <FoodGallery /> */}
-      {/* <ModelViewer /> */}
+
+
+     {/* Video Section with Overlay */}
+      <div className="secondary-video-wrapper" style={{ position: "relative", height: "800px", marginTop: "-20px", marginBottom: "-800px", overflow: "visible" }}>
+        <video
+          autoPlay
+          muted
+          loop
+          preload="auto"
+          playsInline
+          crossOrigin="anonymous"
+          className="secondary-banner-video"
+          aria-label="Seafood Salting Video"
+          
+          style={{
+            width: "100%",
+            height: "100%",
+            height: "1000px",
+            objectFit: "cover",
+            position: "relative",
+            zIndex: "auto",
+            marginBottom: "-800px",
+            marginTop: "-400px",
+            
+          }}
+        >
+          <source src={`${process.env.PUBLIC_URL}/Seafood.webm`} type="video/webm" />
+          Your browser does not support the video tag.
+        </video>
+
+
+    
+      </div>
+          <ContactForm />
+
+
+
+
+
+
 
     </div>
   );
 };
+
 
 export default NutritionalApp;

@@ -1,16 +1,23 @@
 import React, { useState } from "react";
 import { useSwipeable } from "react-swipeable";
 
-
-
+// 🔹 Updated image array with src and descriptive alt text
 const images = [
-   "/FoodImage1.jpg",
-  "/FoodImage2.jpg",
-  "/FoodImage3.jpg",
- 
+  {
+    src: process.env.PUBLIC_URL + "/PP1.png",
+    alt: "Slide 1"
+  },
+  {
+    src: process.env.PUBLIC_URL + "/PP1.png",
+    alt: "Slide 2"
+  },
+  {
+    src: process.env.PUBLIC_URL + "/PP1.png",
+    alt: "Slide 3"
+  }
 ];
 
-const PowerpointGallery = () => {
+const PPGallery = () => {
   const [index, setIndex] = useState(0);
 
   const swipeHandlers = useSwipeable({
@@ -21,12 +28,16 @@ const PowerpointGallery = () => {
   });
 
   return (
-    <div className="ppgallery-container" {...swipeHandlers}>
-      <h2 style={{ textAlign: "center", color: "white", marginBottom: "1rem" }}>
-        This is a Placeholder for My PowerPoint.
+    <div className="gallery-container" {...swipeHandlers}>
+      <h2 style={{ textAlign: "center", color: "white", fontFamily: "RubikDirt", fontWeight: "100", marginBottom: "1rem" }}>
+        Powerpoint Project Will be Displayed Here.
       </h2>
-      <img src={images[index]} alt={`Dish ${index + 1}`} className="gallery-image" />
-      <div className="ppgallery-controls">
+      <img
+        src={images[index].src}
+        alt={images[index].alt}
+        className="gallery-image"
+      />
+      <div className="gallery-controls">
         <button onClick={() => setIndex((prev) => (prev - 1 + images.length) % images.length)}>
           ⬅
         </button>
@@ -35,8 +46,26 @@ const PowerpointGallery = () => {
           ➡
         </button>
       </div>
+
+      {/* Add download link for PP1.png */}
+      <div style={{ textAlign: "center", marginTop: "1rem" }}>
+        <a
+          href={process.env.PUBLIC_URL + "/PP1.png"} // Path to the image in the public folder
+          download
+          style={{
+            color: "BLACK",
+            backgroundColor: "Yellow",
+            textDecoration: "underline",
+            fontSize: "2rem",
+            fontFamily: "RubikDirt",
+            fontWeight: "100"
+          }}
+        >
+          ⬇️CLICK THIS LINK TO DOWNLOAD MY PLACEHOLDER POWERPOINT AND THE NON-WEB FILE REQUIREMENT⬇️
+        </a>
+      </div>
     </div>
   );
 };
 
-export default PowerpointGallery;
+export default PPGallery;
