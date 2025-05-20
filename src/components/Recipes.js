@@ -88,7 +88,7 @@ const Recipes = () => {
 
   <h2 style={{ fontSize: "1.5rem", fontWeight: "100" }}>
     <a
-      href="https://www.101cookbooks.com/"
+      href="https://minimalistbaker.com/"
       target="_blank"
       rel="noopener noreferrer"
       style={{ color: "#FFD700", textDecoration: "underline" }}
