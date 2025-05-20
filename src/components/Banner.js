@@ -11,8 +11,9 @@ const Banner = ({ title, subtitle }) => (
       playsInline
       className="banner-video"
       aria-label="Burger flipping video in the background"
+      zIndex="-10"
     >
-     <source src={`${process.env.PUBLIC_URL}/BGPan.mp4`} type="video/mp4" />
+       <source src="/BGPan.mp4" type="video/mp4" />
       Your browser does not support the video tag.
     </video>
 

@@ -82,10 +82,11 @@ const Home = () => {
       height: "100%",          // fill wrapper vertically
       objectFit: "cover",     // scale nicely without distortion
       position: "relative",
-      zIndex: 1,
+      zIndex: "auto",
     }}
   >
-    <source src={`${process.env.PUBLIC_URL}/Seafood.mp4`} type="video/mp4" />
+    <source src="/Seafood.mp4" type="video/mp4" />
+
     Your browser does not support the video tag.
   </video>
 
@@ -101,9 +102,7 @@ const Home = () => {
   fontFamily: "RubikDirt",
   fontWeight: "1",
   padding: "2rem",
-  zIndex: 2,
-  fontSize: "3rem",
-  
+  fontSize: "3rem", 
   textAlign: "center",
   userSelect: "none",
     }}

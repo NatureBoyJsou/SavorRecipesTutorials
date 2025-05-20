@@ -4,19 +4,18 @@ import { useSwipeable } from "react-swipeable";
 // 🔹 Updated image array with src and descriptive alt text
 const images = [
   {
-    src: `${process.env.PUBLIC_URL}/FoodImage1.jpg`,
+    src: process.env.PUBLIC_URL + "/FoodImage1.jpg",
     alt: "Bowl With Egg Fruit and Lemon"
   },
   {
-    src: `${process.env.PUBLIC_URL}/FoodImage2.jpg`,
+    src: process.env.PUBLIC_URL + "/FoodImage2.jpg",
     alt: "Overview of the Kitchen"
   },
   {
-    src: `${process.env.PUBLIC_URL}/FoodImage3.jpg`,
+    src: process.env.PUBLIC_URL + "/FoodImage3.jpg",
     alt: "3 Bowls With Spaghetti On the Right"
   }
 ];
-
 
 const FoodGallery = () => {
   const [index, setIndex] = useState(0);
