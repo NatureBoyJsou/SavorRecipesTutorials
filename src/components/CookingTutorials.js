@@ -65,6 +65,16 @@ const CookingTutorials = () => {
         <PPGallery />
      
       </div>
+
+
+              {/* Recipes Image */}
+        <div className="full-width-box">
+          <img 
+            src={process.env.PUBLIC_URL + "/tutorial.jpg"} 
+            alt="QR Codes" 
+            style={{ width: "50%", borderRadius: "12px" }} 
+          />
+        </div>
           <ContactForm />
 
 

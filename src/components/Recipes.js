@@ -85,6 +85,7 @@ const Recipes = () => {
     </a>
   </h2>
   
+  
 
   <h2 style={{ fontSize: "1.5rem", fontWeight: "100" }}>
     <a
@@ -98,6 +99,15 @@ const Recipes = () => {
   </h2>
 </div>
 
+        {/* QR Code Box */}
+        <div className="full-width-box">
+          <img 
+            src={process.env.PUBLIC_URL + "/recipes.jpg"} 
+            alt="QR Codes" 
+            style={{ width: "50%", borderRadius: "12px" }} 
+          />
+        </div>
+    
 
 
       {/* Model Viewer Box */}

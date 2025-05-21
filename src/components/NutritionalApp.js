@@ -61,7 +61,7 @@ const NutritionalApp = () => {
           <img 
             src={process.env.PUBLIC_URL + "/AppQRCodes.png"} 
             alt="QR Codes" 
-            style={{ width: "100%", borderRadius: "12px" }} 
+            style={{ width: "80%", borderRadius: "12px" }} 
           />
         </div>
       </section>
