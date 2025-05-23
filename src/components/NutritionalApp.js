@@ -59,7 +59,7 @@ const NutritionalApp = () => {
         {/* QR Code Box */}
         <div className="full-width-box">
           <img 
-            src={process.env.PUBLIC_URL + "/AppQRCodes.png"} 
+            src={process.env.PUBLIC_URL + "/MobileAppScreenshot.png"} 
             alt="QR Codes" 
             style={{ width: "80%", borderRadius: "12px" }} 
           />
