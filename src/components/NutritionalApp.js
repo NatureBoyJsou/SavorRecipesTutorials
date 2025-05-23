@@ -60,7 +60,7 @@ const NutritionalApp = () => {
         <div className="full-width-box">
           <img 
             src={process.env.PUBLIC_URL + "/MobileAppScreenshot.png"} 
-            alt="QR Codes" 
+            alt="Mobile App Screenshot" 
             style={{ width: "80%", borderRadius: "12px" }} 
           />
         </div>

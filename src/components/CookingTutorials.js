@@ -67,11 +67,11 @@ const CookingTutorials = () => {
       </div>
 
 
-              {/* Recipes Image */}
+        {/* Cookinng Tutorial Image */}
         <div className="full-width-box">
           <img 
             src={process.env.PUBLIC_URL + "/tutorial.jpg"} 
-            alt="QR Codes" 
+            alt="Woman Cooking Food" 
             style={{ width: "50%", borderRadius: "12px" }} 
           />
         </div>

@@ -99,11 +99,11 @@ const Recipes = () => {
   </h2>
 </div>
 
-        {/* QR Code Box */}
+        {/* Recipes Image */}
         <div className="full-width-box">
           <img 
             src={process.env.PUBLIC_URL + "/recipes.jpg"} 
-            alt="QR Codes" 
+            alt="Recipes Image" 
             style={{ width: "50%", borderRadius: "12px" }} 
           />
         </div>
