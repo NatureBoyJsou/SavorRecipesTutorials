@@ -24,7 +24,6 @@ const Home = () => {
           <p>
             Welcome to Savor. A Curated Collection of Recipes, Cooking Tutorials and Resources to Promote Healthy Eating and a Healthy Lifestyle! 
          
-          <h2></h2>  This Website Was Coded From Scratch Using React, CSS, JS and HTML, Deployed on My Own Github Page.
           </p>
         </div>
 
