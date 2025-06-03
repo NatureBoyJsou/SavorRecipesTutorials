@@ -5,6 +5,7 @@ import FoodGallery from "./FoodGallery";
 import Header from "./Header";
 import ModelViewer from "./ModelViewer";
 import ContactForm from "./ContactForm";
+import OnionChop from "./OnionVid";
 
 
 
@@ -124,7 +125,7 @@ const Recipes = () => {
 
       </section>
 
-      <Banner />
+      <OnionChop />
       
     
 

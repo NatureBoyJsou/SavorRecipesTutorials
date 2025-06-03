@@ -27,20 +27,48 @@ const Home = () => {
           </p>
         </div>
 
-        <div className="content-box">
-          <h2>Fresh Ingredients</h2>
-          <p>These Cards Will Flip Revealing Recipes & Ingredients</p>
-        </div>
+<div className="content-box">
+  <div className="content-box-inner">
+    <div className="content-box-front">
+      <h2>What Are the Benefits to Cooking From Scratch?</h2>
+    </div>
+    <div className="content-box-back">
+      <p>🍽️ Control Over Ingredients</p>
+      <p>✅ Fresher, Healthier Meals</p>
+      <p>🌿 Avoid Preservatives & Chemicals</p>
+      <p>👨‍🍳 More Enjoyable Cooking Experience</p>
+    </div>
+  </div>
+</div>
 
-        <div className="content-box">
-          <h2>Locally Sourced</h2>
-          <p>These Cards Will Flip Revealing Recipes & Ingredients</p>
-        </div>
+<div className="content-box">
+  <div className="content-box-inner">
+    <div className="content-box-front">
+      <h2>What Are Some Surefire Ways to Lose Weight?</h2>
+    </div>
+    <div className="content-box-back">
+      <p>🍽️ Burn More Calories Than You Consume</p>
+      <p>🥩 Increase Protein, Decrease Fats & Carbs</p>
+      <p>🏋️‍♂️ Excercise, But Don't Overtrain</p>
+      <p>💧 Drink Lots of Water</p>
+    </div>
+  </div>
+</div>
 
-        <div className="content-box">
-          <h2>Mobile App</h2>
-          <p>These Cards Will Flip Revealing Recipes & Ingredients</p>
-        </div>
+<div className="content-box">
+  <div className="content-box-inner">
+    <div className="content-box-front">
+      <h2>For Adults, How Many Calories Per Day Should I Be Consuming?</h2>
+    </div>
+    <div className="content-box-back">
+      <p>🍽️ Adult Males 19-30: 1800-2400 Calories</p>
+      <p>🍽️ Adult Females 19-30: 2400-3000 Calories</p>
+      <p>🍽️ Adult Males 31-59: 2200-3000 Calories</p>
+      <p>🍽️ Adult Females 31-59: 1600-2200 Calories</p>
+    </div>
+  </div>
+</div>
+      
       </section>
 
       <Banner />

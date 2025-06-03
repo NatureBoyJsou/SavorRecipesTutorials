@@ -1,5 +1,3 @@
-
-
 /* NavBar Background Color */
 header {
   display: flex;
@@ -96,7 +94,6 @@ body {
   text-shadow: 0 0 8px rgba(239, 162, 8, 0.9), 0 0 20px rgba(239, 162, 8, 0.7);
 }
 
-
 /* Lower Background Rectangular Content Box */
 .content-box1 {
   background-color: rgba(0, 0, 0, 0.6);
@@ -112,31 +109,77 @@ body {
   font-weight: 100;
 }
 
-
-
-/* Smaller Square Content Box */
+/* Flipping Content Box Container */
 .content-box {
   background-color: rgba(0, 0, 0, 0.6);
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
-  width: 300px;
-  padding: 2rem;
-  text-align: left;
-  transition: transform 0.3s ease;
+  box-shadow: 0 0 20px 5px rgba(239, 162, 8, 0.6); /* Keep glow */
+  width: 400px; /* Increase width */
+  height: 200px; /* Increase height */
+  perspective: 1000px;
   font-family: RubikDirt;
   font-weight: 100;
+  margin: 1rem;
 }
 
-.content-box {
-  perspective: 1000px; /* Needed for 3D flip */
-  transition: box-shadow 0.6s ease; /* Smooth glow transition */
-}
 
+/* Orange glow on hover */
 .content-box:hover {
-  transform: rotateY(180deg);
-  box-shadow: 0 0 20px 5px rgba(239, 162, 8, 0.8); /* Orange glow */
-  transition: transform 0.6s ease, box-shadow 0.6s ease;
+  box-shadow: 0 0 20px 5px rgba(239, 162, 8, 0.8);
 }
+
+/* Inner container that flips */
+.content-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s ease;
+  transform-style: preserve-3d;
+  border-radius: 12px;
+}
+
+/* Flip the inner container on hover */
+.content-box:hover .content-box-inner {
+  transform: rotateY(180deg);
+}
+
+/* Front and back faces */
+.content-box-front,
+.content-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 1rem;
+  box-sizing: border-box;
+  font-weight: 100;
+  user-select: none;
+  backface-visibility: hidden; /* <=== THIS hides the hidden side */backface-visibility: hidden; /* <=== THIS hides the hidden side */
+}
+
+/* Front face styling */
+.content-box-front {
+  background-color: rgba(0, 0, 0, 0.6);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+}
+
+/* Back face styling */
+.content-box-back {
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem; /* spacing between lines */
+  text-align: center;
+}
+
 
 /* Headers Like Fresh Ingredients...Etc */
 .content-box h2 {
@@ -161,7 +204,6 @@ body {
   margin: -400px auto 0;
   display: block;
 }
-
 
 /* Burger Video */
 .banner-video {
@@ -193,7 +235,6 @@ body {
   margin-top: 800px; 
 }
 
-
 .banner {
   display: flex;
   flex-direction: row;
@@ -221,8 +262,8 @@ body {
   padding: 100px 50px;
   color: rgb(239, 162, 8);
   z-index: 20;
-
 }
+
 .gallery-image {
   width: 100%;
   height: 600px;
@@ -243,7 +284,7 @@ body {
   height: auto;
   display: block;
   object-fit: cover;
-   z-index: -10; 
+  z-index: -10; 
 }
 
 .PowerpointGallery {
@@ -279,7 +320,6 @@ body {
   position: relative;
 }
 
-
 .ppgallery-image {
   width: 100%;
   height: 600px;
@@ -287,4 +327,30 @@ body {
   border-radius: 12px;
   background-color: #111; /* fallback background */
   border: 2px dashed #aaa; /* helps visualize empty space */
+}
+
+.gallery-container {
+  width: 100%;
+  max-width: 600px; /* match original layout */
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%; /* handled by children */
+}
+
+.slider-image {
+  flex: 0 0 100%;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.gallery-controls {
+  text-align: center;
+  margin-top: 10px;
 }
