@@ -128,22 +128,22 @@ const Home = () => {
     backgroundColor: "rgba(20, 20, 20, 0.85)",
     boxShadow: "0 0 20px rgba(0, 0, 0, 0.8)",
     borderRadius: "12px",
-    padding: "1.5rem",
+    padding: "0rem",
     color: "orange",
     fontFamily: "RubikDirt",
     fontWeight: "100",
-    fontSize: "24px",
+    fontSize: "20px",
     textAlign: "center",
     zIndex: 2,
     position: "relative",
   }}
 >
-  Citations <br />
+   Audio Music: Royalty Free Pixabay
   <br /> BG Videos: MS Clipchamp
-  <br /> Slideshow Images Designed With Canva
+  <br /> Slideshow Images Designed With Canva 
   <br /> 3D Utensils: Royalty Free CG Trader
-  <br /> Audio Sources: Royalty Free From Pixabay
-  <br /> Food Images/App: Original Photos/Content
+ 
+ 
 
 </div>
 
