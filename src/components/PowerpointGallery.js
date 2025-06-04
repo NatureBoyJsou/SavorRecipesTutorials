@@ -6,44 +6,40 @@ const PPGallery = () => {
       <h2
         style={{
           textAlign: "center",
-          color: "white",
+          color: "Orange",
           fontFamily: "RubikDirt",
           fontWeight: "100",
           marginBottom: "1rem",
         }}
       >
-        This is a Placeholder for My Powerpoint Assignment.
+        Hommeade Bison Burger Cooking Tutorial.
       </h2>
 
-      {/* Responsive YouTube video embed */}
+      {/* Local video instead of embedded Slides */}
       <div
         style={{
-          position: "relative",
-          paddingBottom: "56.25%", // 16:9 aspect ratio
-          height: 0,
-          overflow: "hidden",
+          display: "flex",
+          justifyContent: "center",
           maxWidth: "1280px",
           margin: "0 auto",
           borderRadius: "12px",
           boxShadow: "0 0 12px rgba(255,255,255,0.3)",
         }}
       >
-        <iframe
-          title="YouTube video player"
-          src="https://www.youtube.com/embed/N-8I0gEOvjE?si=_wOKndDFJGhaElCP"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerPolicy="strict-origin-when-cross-origin"
-          allowFullScreen
+        <video
+          controls
           style={{
-            position: "absolute",
-            top: 0,
-            left: 0,
-            width: "100%",
-            height: "100%",
+            width: "90%",
+            height: "auto",
             borderRadius: "12px",
           }}
-        />
+        >
+          <source
+            src={`${process.env.PUBLIC_URL}/Burgers480.webm`}
+            type="video/webm"
+          />
+          Your browser does not support the video tag.
+        </video>
       </div>
     </div>
   );
