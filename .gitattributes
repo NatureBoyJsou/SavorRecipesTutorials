@@ -1,3 +1,4 @@
 *.mp4 filter=lfs diff=lfs merge=lfs -text
 public/BGPan.mp4 filter=lfs diff=lfs merge=lfs -text
 Seafood.mp4 filter=lfs diff=lfs merge=lfs -text
+*.webm filter=lfs diff=lfs merge=lfs -text
