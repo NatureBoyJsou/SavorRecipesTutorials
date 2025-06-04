@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/SavorRecipesTutorials/static/css/main.7745071d.css",
-    "main.js": "/SavorRecipesTutorials/static/js/main.cd83d83c.js",
+    "main.js": "/SavorRecipesTutorials/static/js/main.3534455b.js",
     "static/js/453.373540bb.chunk.js": "/SavorRecipesTutorials/static/js/453.373540bb.chunk.js",
     "static/media/RubikDirt-Regular.ttf": "/SavorRecipesTutorials/static/media/RubikDirt-Regular.61a7c124415995ae5007.ttf",
     "index.html": "/SavorRecipesTutorials/index.html",
     "main.7745071d.css.map": "/SavorRecipesTutorials/static/css/main.7745071d.css.map",
-    "main.cd83d83c.js.map": "/SavorRecipesTutorials/static/js/main.cd83d83c.js.map",
+    "main.3534455b.js.map": "/SavorRecipesTutorials/static/js/main.3534455b.js.map",
     "453.373540bb.chunk.js.map": "/SavorRecipesTutorials/static/js/453.373540bb.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7745071d.css",
-    "static/js/main.cd83d83c.js"
+    "static/js/main.3534455b.js"
   ]
 }
