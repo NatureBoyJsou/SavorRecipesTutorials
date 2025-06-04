@@ -29,7 +29,7 @@ const Recipes = () => {
 
       <section className="content-section">
         <div className="full-width-box">
-          <h1>Recipes</h1>
+          <h1>It All Starts With a Great Recipe!</h1>
         </div>
 
         <div className="full-width-box">

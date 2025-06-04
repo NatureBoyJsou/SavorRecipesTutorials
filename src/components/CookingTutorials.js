@@ -34,7 +34,7 @@ const PowerpointGallery = () => {
   return (
     <div className="gallery-container" {...swipeHandlers}>
       <h2 style={{ textAlign: "center", color: "yellow", marginBottom: "1rem" }}>
-        This is a Placeholder for My PowerPoint.
+        
       </h2>
       <img src={images[index]} alt={`Dish ${index + 1}`} className="gallery-image" />
       <div className="gallery-controls">
@@ -54,7 +54,7 @@ const CookingTutorials = () => {
       {/* Content Section */}
       <section className="content-section">
         <div className="full-width-box">
-          <h1>Cooking Tutorials</h1>
+          <h1>Learn How to Make It!</h1>
           <p></p>
         </div>
       </section>
@@ -64,16 +64,7 @@ const CookingTutorials = () => {
       <div className="PowerpointGallery">
         <PPGallery />
      
-      </div>
-
-
-        {/* Cookinng Tutorial Image */}
-        <div className="full-width-box">
-          <img 
-            src={process.env.PUBLIC_URL + "/tutorial.jpg"} 
-            alt="Woman Cooking Food" 
-            style={{ width: "50%", borderRadius: "12px" }} 
-          />
+      
         </div>
           <ContactForm />
 

@@ -22,7 +22,7 @@ const Home = () => {
         <div className="full-width-box">
           <h1>We're Glad You're Here!</h1>
           <p>
-            Welcome to Savor. A Curated Collection of Recipes, Cooking Tutorials and Resources to Promote Healthy Eating and a Healthy Lifestyle! 
+            This is Savor. A Curated Collection of Recipes, Cooking Tutorials and Resources to Promote Healthy Eating and a Healthy Lifestyle! 
          
           </p>
         </div>
@@ -68,6 +68,19 @@ const Home = () => {
     </div>
   </div>
 </div>
+
+<div className="content-box">
+  <div className="content-box-inner">
+    <div className="content-box-front">
+      <h2>Does it Matter How Far My Food Travels?</h2>
+    </div>
+    <div className="content-box-back">
+      <p>🚚 In the US, food is shipped an average of 1,500 miles before being sold to the consumer</p>
+      <p>🍈 Food that travels longer distances tends to lose nutritional value and freshness</p>
+      <p>🧪 Food Prepped For Travel Often Contains Additional Chemicals/Preservatives</p>
+    </div>
+  </div>
+</div>
       
       </section>
 
@@ -95,7 +108,7 @@ const Home = () => {
             height: "1000px",
             objectFit: "cover",
             position: "relative",
-            zIndex: "auto",
+            zIndex: "0",
             marginBottom: "-800px",
             marginTop: "50px",
             
@@ -107,8 +120,35 @@ const Home = () => {
 
       </div>
           <ContactForm />
+{/* Info Box */}
+<div
+  style={{
+    maxWidth: "600px",
+    margin: "2rem auto",
+    backgroundColor: "rgba(20, 20, 20, 0.85)",
+    boxShadow: "0 0 20px rgba(0, 0, 0, 0.8)",
+    borderRadius: "12px",
+    padding: "1.5rem",
+    color: "orange",
+    fontFamily: "RubikDirt",
+    fontWeight: "100",
+    fontSize: "24px",
+    textAlign: "center",
+    zIndex: 2,
+    position: "relative",
+  }}
+>
+  Citations <br />
+  <br /> BG Videos: MS Clipchamp
+  <br /> Slideshow Images Designed With Canva
+  <br /> 3D Utensils: Royalty Free CG Trader
+  <br /> Audio Sources: Royalty Free From Pixabay
+  <br /> Food Images/App: Original Photos/Content
+
+</div>
 
     </div>
+    
   );
 };
 

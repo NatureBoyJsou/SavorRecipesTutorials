@@ -54,7 +54,7 @@ const FoodQuiz = ({ onGrainsSelect, onPoultrySelect, onSeafoodSelect, onMeatSele
 
 const styles = {
   container: {
-    backgroundColor: "rgba(0,0,0,0.7)",
+    backgroundColor: "rgba(0,0,0,0.9)",
     padding: "2rem",
     borderRadius: "12px",
     textAlign: "center",
