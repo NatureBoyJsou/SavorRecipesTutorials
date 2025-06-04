@@ -3,7 +3,6 @@ import { useSwipeable } from "react-swipeable";
 import Banner from "./Banner";
 import FoodGallery from "./FoodGallery";
 import Header from "./Header";
-import ModelViewer from "./ModelViewer";
 import ContactForm from "./ContactForm";
 
 

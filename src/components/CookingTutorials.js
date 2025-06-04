@@ -3,9 +3,9 @@ import { useSwipeable } from "react-swipeable";
 import Banner from "./Banner";
 import FoodGallery from "./FoodGallery";
 import Header from "./Header";
-import ModelViewer from "./ModelViewer";
 import PPGallery from "./PowerpointGallery";
 import ContactForm from "./ContactForm";
+import Flour from "./Flour";
 
 const NavBarItems = [
   { name: "Home", link: "/", type: "link" },
@@ -59,7 +59,7 @@ const CookingTutorials = () => {
         </div>
       </section>
 
-      <Banner />
+      <Flour />
       
       <div className="PowerpointGallery">
         <PPGallery />
