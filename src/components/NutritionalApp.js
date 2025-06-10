@@ -21,7 +21,7 @@ const NutritionalApp = () => {
 <section className="content-section" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '2rem' }}>
   {/* Top Banner */}
   <div className="full-width-box" style={{ zIndex: 2, position: "relative" }}>
-    <h1>It All Starts With a Great Recipe!</h1>
+    <h1>Track and Count Your Meals!</h1>
   </div>
 
   {/* YouTube Embed */}
@@ -47,6 +47,7 @@ const NutritionalApp = () => {
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
       allowFullScreen
       style={{ borderRadius: "8px" }}
+      aria-label="Youtube Player for Nutritional App Promo"
     ></iframe>
   </div>
 

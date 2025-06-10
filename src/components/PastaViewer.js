@@ -27,6 +27,7 @@ const Model = ({ spinning }) => {
       scale={2}
       position={[0, 1, 0]}
       rotation={[baseRotationX, 0, 0]}
+      aria-label="3D model of a pasta recipe card"
     />
   );
 };
@@ -50,6 +51,7 @@ const PastaViewer = () => {
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
+        
       }}
     >
       <div style={{ width: "100%", flexGrow: 1 }}>

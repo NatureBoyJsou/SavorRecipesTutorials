@@ -26,6 +26,7 @@ const Model = ({ spinning }) => {
       scale={2}
       position={[0, .5, 0]}
       rotation={[baseRotationX, 0, 0]}
+      aria-label="3D model of a chicken recipe card"
     />
   );
 };

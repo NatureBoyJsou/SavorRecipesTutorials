@@ -51,6 +51,7 @@ const PPGallery = () => {
               <source
                 src={`${process.env.PUBLIC_URL}/Burgers480.webm`}
                 type="video/webm"
+                aria-label="Bison Burger Tutorial Video Local Storage on Website"
               />
               Your browser does not support the video tag.
             </video>
@@ -152,7 +153,28 @@ const PPGallery = () => {
     >
       Chopper
     </a>
- 
+     <a
+      href="https://drive.google.com/drive/folders/1DQjPbXjtkeumbIjL3YNPD-d0JX2gAsvS?usp=drive_link"
+      target="_blank"
+      rel="noopener noreferrer"
+      style={{
+        padding: "0.5rem 1rem",
+        backgroundColor: "orange",
+        color: "black",
+        textDecoration: "none",
+        borderRadius: "8px",
+        fontWeight: "500",
+        fontSize: "16px",
+        cursor: "pointer",
+        userSelect: "none",
+        boxShadow: "0 2px 6px rgba(0,0,0,0.3)",
+        whiteSpace: "nowrap",
+      }}
+      onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "#ffb347")}
+      onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "orange")}
+    >
+      .PPTX Download
+    </a>
   </div>
 </div>
 
@@ -187,6 +209,7 @@ const PPGallery = () => {
               <source
                 src={`${process.env.PUBLIC_URL}/PastaTutorialAudio.mp3`}
                 type="audio/mp3"
+                aria-label="Audio Tutorial for Pasta Making"
               />
               Your browser does not support the audio element.
             </audio>
